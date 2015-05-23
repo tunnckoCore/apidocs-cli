@@ -1,6 +1,6 @@
 {
   "name": "apidocs-cli",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Async CLI for automatically generating API docs from code comments with `helper-apidocs`",
   "repository": "tunnckoCore/apidocs-cli",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
