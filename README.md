@@ -21,6 +21,7 @@ You can use it as helper `helper-apidocs` and as CLI tool if install it globally
 var handlebars = require('handlebars')
 handlebars.registerHelper('apidocs', require('apidocs-cli'))
 
+// or with verb
 var verb = require('verb')
 verb.helper('apidocs', require('apidocs-cli'))
 
@@ -49,6 +50,14 @@ verb.task('default', function() {
   Report bugs:  https://github.com/tunnckoCore/apidocs-cli
   helper-apidocs: https://github.com/helpers/helper-apidocs
 ```
+
+
+## See also
+- [helper-apidocs](https://github.com/jonschlinkert/helper-apidocs): Template helper for automatically generating API docs from code… [more](https://github.com/jonschlinkert/helper-apidocs)
+- [helper-related](https://github.com/helpers/helper-related): Template helper for generating a list of links to the homepages of… [more](https://github.com/helpers/helper-related)
+- [koa-ip-filter](https://github.com/tunnckocore/koa-ip-filter): Filter IPs with a glob pattern, regex, string, array or matcher function.… [more](https://github.com/tunnckocore/koa-ip-filter)
+- [npm-related](https://github.com/tunnckoCore/npm-related): Thin wrapper on top of `helper-related` for generating a list of links… [more](https://github.com/tunnckoCore/npm-related)
+- [tmp-file](https://github.com/tunnckocore/tmp-file): Create actual and temporary file on disk - support stream, async, vinyl,… [more](https://github.com/tunnckocore/tmp-file)
 
 
 ## Contributing
