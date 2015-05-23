@@ -27,5 +27,24 @@
       "fixtures/**"
     ]
   },
-  "keywords": []
+  "keywords": [
+    "api",
+    "apidocs",
+    "app",
+    "async",
+    "cli",
+    "code",
+    "code-comments",
+    "comments",
+    "docs",
+    "generate",
+    "handlebars",
+    "helper",
+    "helpers",
+    "js",
+    "js-comments",
+    "jscomments",
+    "tempalte",
+    "verb"
+  ]
 }
