@@ -1,7 +1,7 @@
 {
   "name": "apidocs-cli",
-  "version": "1.0.0",
-  "description": "Async CLI for automatically generating API docs from code comments with `helper-apidocs`",
+  "version": "0.0.0",
+  "description": "Command-line app for generating API docs from code comments. Can be used as API of `helper-apidocs` package.",
   "repository": "tunnckoCore/apidocs-cli",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
   "main": "index.js",
@@ -10,22 +10,10 @@
     "test": "standard && node test.js"
   },
   "dependencies": {
-    "chalk": "~1.0.0",
-    "helper-apidocs": "~0.4.1",
-    "log-symbols": "~1.0.2",
-    "meow": "~3.1.0"
+    "helper-apidocs": "^0.4.1"
   },
   "devDependencies": {
     "assertit": "^0.1.0"
-  },
-  "bin": {
-    "apidocs": "cli.js"
-  },
-  "preferGlobal": true,
-  "standard": {
-    "ignore": [
-      "fixtures/**"
-    ]
   },
   "keywords": [
     "api",
