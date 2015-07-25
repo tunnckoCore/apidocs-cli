@@ -1,5 +1,12 @@
 
 
+## 2.0.0 - 2015-07-25
+- Release v2.0.0 / npm@v2.0.0
+- just pass callback
+- fix dependencies range
+- fix bin property in package.json
+- refactor
+
 ## 1.0.0 - 2015-05-23
 - Release v1.0.0 / npm@v1.0.0
 - add keywords
