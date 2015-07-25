@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*!
  * apidocs-cli <https://github.com/tunnckoCore/apidocs-cli>
  *
