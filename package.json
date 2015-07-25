@@ -40,5 +40,8 @@
     "tempalte",
     "verb"
   ],
-  "bin": "cli.js"
+  "bin": {
+    "apidocs": "cli.js",
+    "apidocs-cli": "cli.js"
+  }
 }
