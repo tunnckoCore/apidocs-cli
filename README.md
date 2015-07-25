@@ -9,6 +9,7 @@
 ```
 npm i apidocs-cli --save
 npm test
+apidocs --help
 ```
 
 
@@ -39,6 +40,40 @@ apidocsCli('./*.js', function (err, res) {
   // all .js files in repo root (index.js and test.js)
 })
 ```
+
+
+## CLI
+> run `apidocs --help`
+
+```
+
+Command-line app for generating API docs from code comments.
+Can be used as API of `helper-apidocs` package.
+
+  Options (plus any options introduced in helper-apidocs)
+    --help        show this help
+    --version     current version
+
+  Usage
+    apidocs <FILES...> [flags]
+
+  Example
+    apidocs index.js
+    apidocs ./lib/*.js
+
+  Issues: https://github.com/tunnckoCore/apidocs-cli/issues
+  Readme: https://github.com/tunnckoCore/apidocs-cli
+  Helper: https://github.com/helpers/helper-apidocs
+
+```
+
+
+## See also
+- [helper-apidocs](https://github.com/jonschlinkert/helper-apidocs): Template helper for automatically generating API docs from code… [more](https://github.com/jonschlinkert/helper-apidocs)
+- [helper-related](https://github.com/helpers/helper-related): Template helper for generating a list of links to the homepages of… [more](https://github.com/helpers/helper-related)
+- [koa-ip-filter](https://github.com/tunnckocore/koa-ip-filter): Filter IPs with a glob pattern, regex, string, array or matcher function.… [more](https://github.com/tunnckocore/koa-ip-filter)
+- [npm-related](https://github.com/tunnckocore/npm-related): Thin wrapper on top of `helper-related` for generating a list of links… [more](https://github.com/tunnckocore/npm-related)
+- [tmp-file](https://github.com/tunnckocore/tmp-file): Create actual and temporary file on disk - support stream, async, vinyl,… [more](https://github.com/tunnckocore/tmp-file)
 
 
 ## Contributing
