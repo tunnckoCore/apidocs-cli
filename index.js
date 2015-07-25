@@ -32,7 +32,5 @@ module.exports = function apidocsCli (files, options, callback) {
     throw new TypeError('apidocs-cli: expect callback')
   }
 
-  return apidocs(files, options, function (err, res) {
-    callback(err, res)
-  })
+  return apidocs(files, options, callback)
 }
