@@ -1,6 +1,6 @@
 {
   "name": "apidocs-cli",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Command-line app for generating API docs from code comments. Can be used as API of `helper-apidocs` package.",
   "repository": "tunnckoCore/apidocs-cli",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",

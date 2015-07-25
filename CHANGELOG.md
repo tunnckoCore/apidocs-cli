@@ -1,4 +1,6 @@
-
+## 2.0.1 - 2015-07-25
+- Release v2.0.1 / npm@v2.0.1
+- add shebang to cli.js
 
 ## 2.0.0 - 2015-07-25
 - Release v2.0.0 / npm@v2.0.0
