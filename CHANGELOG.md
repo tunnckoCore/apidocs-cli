@@ -1,5 +1,12 @@
 
 
+## 3.0.0 - 2015-02-02
+- Release v3.0.0 / npm@v3.0.0
+- cli now can run without arguments/options (defaults to `index.js` filepath)
+- add `.sync` method
+- update boilerplate (use `pre-commit`, `greenkeeper enable`d)
+- bump to `helper-apidocs@0.5.x`
+
 ## 2.0.1 - 2015-07-25
 - Release v2.0.1 / npm@v2.0.1
 - add shebang to cli.js
