@@ -1,9 +1,10 @@
 {
   "name": "apidocs-cli",
   "version": "2.0.1",
-  "description": "Command-line app for generating API docs from code comments. Can be used as API of `helper-apidocs` package.",
+  "description": "Command-line app for generating API docs from code comments. Can be used as API of helper-apidocs package.",
   "repository": "tunnckoCore/apidocs-cli",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -18,30 +19,31 @@
     "multiline": "^1.0.2"
   },
   "devDependencies": {
-    "assertit": "^0.1.0"
+    "assertit": "^0.1.0",
+    "pre-commit": "*"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "api",
     "apidocs",
+    "apidocs-cli",
     "app",
     "async",
     "cli",
     "code",
-    "code-comments",
     "comments",
+    "doc",
     "docs",
     "generate",
     "handlebars",
     "helper",
-    "helpers",
     "js",
     "js-comments",
     "jscomments",
-    "tempalte",
+    "sync",
+    "template",
     "verb"
-  ],
-  "bin": {
-    "apidocs": "cli.js",
-    "apidocs-cli": "cli.js"
-  }
+  ]
 }

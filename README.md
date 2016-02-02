@@ -1,6 +1,6 @@
 # [apidocs-cli][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
 
-> Command-line app for generating API docs from code comments. Can be used as API of `helper-apidocs` package.
+> Command-line app for generating API docs from code comments. Can be used as API of helper-apidocs package.
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
@@ -8,27 +8,25 @@
 ## Install
 ```
 npm i apidocs-cli --save
-npm test
-apidocs --help
 ```
 
 
-## API
+## Usage
 > For more use-cases see the [tests](./test.js)
 
-### [apidocsCli](./index.js#L24)
-> Generate API docs from code comments in the JavaScript
-files that match the given `patterns`. Only code comments
-with `@api public` are rendered.
+### [apidocsCli](index.js#L39)
+> Generate API docs from code comments in the JavaScript files that match the given `patterns`. Only code comments with `@api public` are rendered.
 
-* `<files>` **{Array|String}**: filepaths or glob patterns    
-* `[options]` **{Object}**: options to pass to [helper-apidocs][apidocs] or `callback`    
-* `<callback>` **{Function}**: node-style callback function `(err, res)`    
+**Params**
 
-**Example**  
+- `<files>` **{String}** filepath(s) or glob pattern(s)    
+- `[options]` **{Object}** options to pass to [helper-apidocs][apidocs] or `callback`    
+- `<callback>` **{Function}** node-style callback function `(err, res)`    
+
+**Example**
 
 ```js
-var apidocsCli = require('apidocs-cli')
+const apidocsCli = require('apidocs-cli')
 
 apidocsCli('./*.js', function (err, res) {
   if (err) {
@@ -41,12 +39,30 @@ apidocsCli('./*.js', function (err, res) {
 })
 ```
 
+### [.sync](index.js#L79)
+> Synchronous generating API Docs.
+
+**Params**
+
+- `<files>` **{String}** filepath(s) or glob pattern(s)    
+- `[options]` **{Object}** options to pass to [helper-apidocs][apidocs]    
+
+**Example**
+
+```js
+const apidocsCli = require('apidocs-cli')
+const docs = apidocsCli.sync('./*.js')
+
+console.log(docs)
+//=> markdown formatted documentation of
+// all .js files in repo root (index.js and test.js)
+```
+
 
 ## CLI
 > run `apidocs --help`
 
 ```
-
 Command-line app for generating API docs from code comments.
 Can be used as API of `helper-apidocs` package.
 
@@ -64,16 +80,7 @@ Can be used as API of `helper-apidocs` package.
   Issues: https://github.com/tunnckoCore/apidocs-cli/issues
   Readme: https://github.com/tunnckoCore/apidocs-cli
   Helper: https://github.com/helpers/helper-apidocs
-
 ```
-
-
-## See also
-- [helper-apidocs](https://github.com/jonschlinkert/helper-apidocs): Template helper for automatically generating API docs from code… [more](https://github.com/jonschlinkert/helper-apidocs)
-- [helper-related](https://github.com/helpers/helper-related): Template helper for generating a list of links to the homepages of… [more](https://github.com/helpers/helper-related)
-- [koa-ip-filter](https://github.com/tunnckocore/koa-ip-filter): Filter IPs with a glob pattern, regex, string, array or matcher function.… [more](https://github.com/tunnckocore/koa-ip-filter)
-- [npm-related](https://github.com/tunnckocore/npm-related): Thin wrapper on top of `helper-related` for generating a list of links… [more](https://github.com/tunnckocore/npm-related)
-- [tmp-file](https://github.com/tunnckocore/tmp-file): Create actual and temporary file on disk - support stream, async, vinyl,… [more](https://github.com/tunnckocore/tmp-file)
 
 
 ## Contributing
@@ -89,7 +96,7 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [npmjs-url]: https://www.npmjs.com/package/apidocs-cli
 [npmjs-img]: https://img.shields.io/npm/v/apidocs-cli.svg?label=apidocs-cli
 
-[license-url]: https://github.com/tunnckoCore/apidocs-cli/blob/master/LICENSE.md
+[license-url]: https://github.com/tunnckoCore/apidocs-cli/blob/master/LICENSE
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg
 
 
@@ -127,7 +134,5 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [freenode-url]: http://webchat.freenode.net/?channels=charlike
 [freenode-img]: https://img.shields.io/badge/freenode-%23charlike-5654a4.svg
 
-[new-message-url]: https://github.com/tunnckoCore/messages
-[new-message-img]: https://img.shields.io/badge/send%20me-message-green.svg
-
-[apidocs]: https://github.com/helpers/helper-apidocs
+[new-message-url]: https://github.com/tunnckoCore/ama
+[new-message-img]: https://img.shields.io/badge/ask%20me-anything-green.svg

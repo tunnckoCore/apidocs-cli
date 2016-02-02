@@ -14,6 +14,22 @@ var apidocs = require('helper-apidocs')()
  * files that match the given `patterns`. Only code comments
  * with `@api public` are rendered.
  *
+ * **Example**
+ *
+ * ```js
+ * const apidocsCli = require('apidocs-cli')
+ *
+ * apidocsCli('./*.js', function (err, res) {
+ *   if (err) {
+ *     console.error(err.message)
+ *     return
+ *   }
+ *   console.log(res)
+ *   //=> markdown formatted documentation of
+ *   // all .js files in repo root (index.js and test.js)
+ * })
+ * ```
+ *
  * @name   apidocsCli
  * @param  {String} `<files>` filepath(s) or glob pattern(s)
  * @param  {Object} `[options]` options to pass to [helper-apidocs][apidocs] or `callback`
@@ -43,6 +59,17 @@ module.exports = function apidocsCli (files, options, callback) {
 
 /**
  * Synchronous generating API Docs.
+ *
+ * **Example**
+ *
+ * ```js
+ * const apidocsCli = require('apidocs-cli')
+ * const docs = apidocsCli.sync('./*.js')
+ *
+ * console.log(docs)
+ * //=> markdown formatted documentation of
+ * // all .js files in repo root (index.js and test.js)
+ * ```
  *
  * @name   .sync
  * @param  {String} `<files>` filepath(s) or glob pattern(s)

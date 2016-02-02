@@ -49,5 +49,3 @@ test('should generate API docs from the given file:', function (done) {
     done()
   })
 })
-
-console.log(apidocsCli.sync('./index.js'))

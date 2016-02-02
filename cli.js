@@ -53,15 +53,8 @@ if (cli.version) {
   exit(0)
 }
 
-if (Array.isArray(cli._) && !cli._.length) {
-  var msg = red('should provide files or glob pattern, try run')
-  console.error('\n  %s %s', red(error), msg)
-  console.error('  %s %s\n', red(error), 'apidocs --help')
-  exit(1)
-}
-
 // tweaks
-var files = cli._
+var files = cli._ && cli._.length && cli._[0] || 'index.js'
 var opts = cli
 delete opts._
 
