@@ -1,5 +1,9 @@
 
 
+## 3.0.2 - 2015-02-02
+- Release v3.0.2 / npm@v3.0.2
+- `cli.js` in `files` filed in package.json
+
 ## 3.0.1 - 2015-02-02
 - Release v3.0.1 / npm@v3.0.1
 - package.json `bin` field to `cli.js`
