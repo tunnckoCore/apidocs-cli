@@ -48,6 +48,7 @@ module.exports = function apidocsCli (files, options, callback) {
   }
 
   var res = null
+  /* istanbul ignore next */
   try {
     res = apidocs(files, options)
   } catch (err) {
@@ -77,8 +78,10 @@ module.exports = function apidocsCli (files, options, callback) {
  * @api public
  */
 module.exports.sync = function apidocsCliSync (files, options) {
+  /* istanbul ignore next */
   if (typeof files !== 'string') {
     throw new TypeError('apidocsCli.sync: expect `files` to be string')
   }
+  /* istanbul ignore next */
   return apidocs(files, options)
 }
