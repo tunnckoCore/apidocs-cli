@@ -6,10 +6,16 @@
 
 
 ## Install
+
+```
+npm i apidocs-cli --global
+```
+
+or use it as module, not as cli
+
 ```
 npm i apidocs-cli --save
 ```
-
 
 ## Usage
 > For more use-cases see the [tests](./test.js)
