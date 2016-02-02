@@ -45,5 +45,9 @@
     "sync",
     "template",
     "verb"
-  ]
+  ],
+  "bin": {
+    "apidocs": "cli.js",
+    "apidocs-cli": "cli.js"
+  }
 }
