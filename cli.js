@@ -24,7 +24,7 @@ var cli = minimist(process.argv.slice(2), {
 })
 
 if (cli.help) {
-  console.log(gray(multiline.stripIndent(function () {/*
+  console.log(gray(multiline.stripIndent(function () { /*
 
     Command-line app for generating API docs from code comments.
     Can be used as API of `helper-apidocs` package.
@@ -44,7 +44,7 @@ if (cli.help) {
       Readme: https://github.com/tunnckoCore/apidocs-cli
       Helper: https://github.com/helpers/helper-apidocs
 
-  */})))
+  */ })))
   exit(0)
 }
 
