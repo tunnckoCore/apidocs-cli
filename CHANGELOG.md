@@ -1,5 +1,10 @@
 
 
+## 3.0.3 - 2015-02-13
+- Release v3.0.3 / npm@v3.0.3
+- update helper-apidocs@0.5.1 (greenkeeper PR)
+- fixes in `cli.js` for standard@6
+
 ## 3.0.2 - 2015-02-02
 - Release v3.0.2 / npm@v3.0.2
 - `cli.js` in `files` filed in package.json
