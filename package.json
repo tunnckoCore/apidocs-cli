@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "assertit": "^0.1.0",
-    "pre-commit": "*"
+    "pre-commit": ">=1.2.2"
   },
   "files": [
     "cli.js",
